@@ -60,18 +60,18 @@ with open ('task3.csv', 'w', newline='') as csvfile:
         writer.writerows(ArticleMatches)
 '''
 #Task 4
-'''
+
 with open('task3.csv', 'r', encoding='utf8') as TotalGoals:
     next(TotalGoals)
     data = [item[1] for item in TotalGoals]
+    data = [int(datum) for datum in data]
 
-data = [int(datum) for datum in data]
 
 fig1, ax1 = plt.subplots()
 ax1.set_title('Basic Plot')
 ax1.boxplot(data)
 plt.savefig('task4.png')
-'''
+
 
 #Task 5
 '''
@@ -182,7 +182,7 @@ whitespace character exists between each word
 == Remove all remaining words that are only a single character long from the resulting list
 '''
 
-filename = '001.txt'
+'''filename = '001.txt'
 filepath = articlespath + "/"+ filename
 with open(filepath, 'r', encoding='utf8') as CurrentArticle:
     text = CurrentArticle.read()
@@ -211,7 +211,7 @@ for word in answer:
 print(diff)
 
 for i in range(len(textTokenized)):
-    print(textTokenized[i], answer[i], "\n")
+    print(textTokenized[i], answer[i], "\n")'''
 
 
 

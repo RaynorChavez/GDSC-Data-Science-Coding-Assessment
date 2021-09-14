@@ -71,8 +71,9 @@ def task4():
         data = [int(datum) for datum in data]
 
     fig1, ax1 = plt.subplots()
-    ax1.set_title('Basic Plot')
+    ax1.set_title('Team Score Boxplot: Checking for Outliers')
     ax1.boxplot(data)
+    plt.ylabel("Score")
     plt.savefig('task4.png')
 
     return
