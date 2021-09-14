@@ -25,7 +25,7 @@ with open(datafilepath, encoding="utf8") as json_file:
 def task1():
     #Complete task 1 here
 
-    return sorted([code['club_code'] for code in data['clubs']])
+    return sorted(data['teams_codes'])
     
 def task2():
     #Complete task 2 here
