@@ -121,7 +121,7 @@ def task6():
         TeamMentions = {line.strip('\n').split(",")[0]: int(line.strip('\n').split(",")[1]) for line in data}
 
         ArticleMentions = {team:set() for team in Teams}
-        #create dict where article titles are the keys and the items are the teams mentioned
+        #create dict where teams are the keys and the items are the articles where the team is mentioned
         for filenum in range(1,266):
             filename = f'{filenum:03}' + '.txt'
             filepath = articlespath + '/' + filename
